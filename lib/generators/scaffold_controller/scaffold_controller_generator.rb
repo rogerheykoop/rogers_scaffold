@@ -7,7 +7,9 @@ module RogersScaffold
     class ScaffoldControllerGenerator < ::Rails::Generators::ScaffoldControllerGenerator
       include ::RogersScaffold::Base
 
-      source_root File.expand_path('../templates', __FILE__)
+      source_root File.expand_path(File.join(File.dirname(__FILE__), 'templates'))
+
+#      source_root File.expand_path('../templates', __FILE__)
 
       # override ScaffoldControllerGenerator
       hook_for :template_engine

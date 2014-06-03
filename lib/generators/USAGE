@@ -2,9 +2,7 @@ Description:
     Generates rogers scaffold
 
 Example:
-    rails g rogers_scaffold group/user name:string age:integer
+    rails g rogers_scaffold name_of_resource name:string age:integer
 
     This will create:
-        user {model, controller, helper, views, tests}
-        nested resource route
-        Group.has_many :users association
+        name_of_resource {model, controller, helper, views, tests}
