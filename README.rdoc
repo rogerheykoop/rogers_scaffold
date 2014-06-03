@@ -20,7 +20,7 @@ Then bundle:
 
 == Usage
 
-  % rails generate rogers_scaffold [field:type field:type] [options]
+  % rails generate rogers_scaffold:rogers_scaffold resource_name [field:type field:type] [options]
 
 == Example
 
