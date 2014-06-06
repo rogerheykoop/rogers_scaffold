@@ -12,5 +12,5 @@
 </dl>
 
 
-<%%= link_to (fa_icon "edit",:text=>"Edit" ), edit_<%= singular_table_name %>_path(@<%= singular_table_name %>),:class=>"btn btn-warning" %>
+<%%= link_to fa_icon("edit",:text=>"Edit" ), edit_<%= singular_table_name %>_path(@<%= singular_table_name %>),:class=>"btn btn-warning" %>
 <%%= link_to fa_icon("arrow-left",:text=>'Back'), <%= index_helper %>_path,:class=>"btn btn-info" %>
