@@ -3,10 +3,11 @@
     <h2><%%= pluralize(@<%= singular_table_name %>.errors.count, "error") %> prohibited this <%= singular_table_name %> from being saved:</h2>
 
     <ul>
-    <%- @<%= singular_table_name %>.errors.full_messages.each do |msg| -%>
-      <li><%= msg %></li>
-    <%- end -%>
+      <%% @<%= singular_table_name %>.errors.full_messages.each do |msg| %>
+        <li><%%= msg %></li>
+      <%% end %>
     </ul>
+       
   </div>
 <%% end %>
 
